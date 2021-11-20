@@ -1,0 +1,21 @@
+from pyrogram import Client, filters
+
+from pyrogram.errors import FloodWait
+
+from time import sleep
+
+import random  
+
+@Client.on_message(filters.command("nmagzam", prefixes = "%")&filters.me)
+
+def ugnet(_, msg):
+
+	taim = [ '🕐', '🕑' ,'🕒', '🕓', '🕔', '🕕', '🕖', '🕗', '🕘', '🕙',"🕚","︎🕛"]	percent = 0
+
+	for b in taim:
+
+    msg.edit(b)
+
+    sleep(1)
+
+			
